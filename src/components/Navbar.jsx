@@ -1,9 +1,25 @@
-import React from 'react'
+import React from "react";
+import Logo from "./Logo";
+import {
+  NavbarWrapper,
+  NavbarContainer,
+  NavList,
+  NavListItem,
+} from "./styles/Navbar.styled";
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
-  )
-}
+    <NavbarWrapper>
+      <NavbarContainer>
+        <Logo />
+        <NavList>
+          <NavListItem>The App</NavListItem>
+          <NavListItem>About Us</NavListItem>
+          <NavListItem>Get in Touch</NavListItem>
+        </NavList>
+      </NavbarContainer>
+    </NavbarWrapper>
+  );
+};
 
-export default Navbar
+export default Navbar;
