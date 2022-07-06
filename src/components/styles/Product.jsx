@@ -12,7 +12,7 @@ export const Product = styled.div`
 export const ProviderDesc = styled.div`
   text-align: center;
   margin: 50px 0;
-  padding: 60px;
+  padding: 30px;
   h3 {
     width: 614px;
     margin: 0 auto;
@@ -33,6 +33,43 @@ export const ProviderDesc = styled.div`
   }
 `;
 
-export const ProductGuide = styled.div``
-export const ProductImageGuide = styled.div``
-export const ProductTextGuide = styled.div``
+export const ProductGuide = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 0rem;
+  padding: 0 180px;
+`;
+export const ProductImageGuide = styled.div`
+  flex: 1;
+`;
+export const ProductTextGuide = styled.div`
+  flex: 1;
+`;
+export const GuideWrapper = styled.div`
+  display: flex;
+`;
+export const GuideStep = styled.span`
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: ${(props) => props.bg};
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2.2rem;
+`;
+export const GuideTextWrapper = styled.div`
+  margin-bottom: 4rem;
+  font-family: "CeraPro";
+  h4 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  p {
+    width: 379px;
+    font-size: 17px;
+    color: #ffffff;
+  }
+`;
