@@ -12,9 +12,9 @@ const theme = {
     productProviderBg: "#5C1A8D",
     productLeft: "#A792FE",
     productRight: "#E5E5E5",
-    signUpBtn: "#2C3539",
-    signUp: "#F2C94C",
-    footer: "#DEB63D",
+    subscribeBtn: "#2C3539",
+    subscribeBg: "#F2C94C",
+    footerBg: "#DEB63D",
   },
   breakpoints:{
     ipadMini: "768"
