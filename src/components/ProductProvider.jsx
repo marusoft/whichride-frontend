@@ -9,7 +9,7 @@ import {
   GuideWrapper,
   GuideStep,
   GuideTextWrapper,
-} from "./styles/Product";
+} from "./styles/Product.styled";
 
 const ProductProvider = () => {
   return (

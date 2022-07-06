@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 export const Product = styled.div`
-  position: absolute;
+  /* position: absolute; */
   background-color: ${({ theme }) => theme.colors.productProviderBg};
   width: 1440px;
   height: 1110px;
-  margin-top: -0.6rem;
-  z-index: 1000;
+  /* margin-top: -0.6rem; */
+  /* z-index: 1000; */
 `;
 
 export const ProviderDesc = styled.div`
   text-align: center;
   margin: 50px 0;
-  padding: 30px;
+  padding: 70px;
   h3 {
     width: 614px;
     margin: 0 auto;
@@ -36,7 +36,6 @@ export const ProviderDesc = styled.div`
 export const ProductGuide = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 0rem;
   padding: 0 180px;
 `;
 export const ProductImageGuide = styled.div`

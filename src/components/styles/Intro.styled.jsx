@@ -5,7 +5,8 @@ export const IntroWrapper = styled.div`
   align-items: center;
   margin-top: 5rem;
   padding: 0 150px;
-  position: relative;
+  margin-bottom: -3.5rem;
+  /* position: relative; */
 `;
 export const IntroLeft = styled.div`
   flex: 1;
