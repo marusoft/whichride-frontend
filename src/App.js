@@ -16,6 +16,9 @@ const theme = {
     signUp: "#F2C94C",
     footer: "#DEB63D",
   },
+  breakpoints:{
+    ipadMini: "768"
+  }
 };
 
 const App = () => {
