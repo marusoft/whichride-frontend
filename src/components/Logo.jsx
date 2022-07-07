@@ -1,5 +1,5 @@
 import React from "react";
-import WhichRideLogo from "../assests/brand/logo.png";
+import WhichRideLogo from "../assests/brand/logo2.png";
 import { LogoTextWrapper } from "./styles/Logo.styled";
 
 const Logo = () => {
