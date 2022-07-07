@@ -16,8 +16,13 @@ const theme = {
     subscribeBg: "#F2C94C",
     footerBg: "#DEB63D",
   },
-  breakpoints:{
-    ipadMini: "768"
+  mobile:{
+    xxs: "280",
+    xs: "450",
+    sm: "600",
+    md: "960",
+    lg: "1280",
+    xlarge: "1920px"
   }
 };
 

@@ -21,4 +21,7 @@ export const NavListItem = styled.li`
   font-size: 17px;
   color: ${({theme}) => theme.colors.navItemsColor};
   cursor: pointer;
+  @media(max-width: ${({theme}) => theme.mobile.md}px){
+    display: none;
+  }
 `;
