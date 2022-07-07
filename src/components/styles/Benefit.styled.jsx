@@ -1,4 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 export const BenefitWrapper = styled.div`
   background: rgba(167, 146, 254, 0.07);
@@ -99,6 +109,7 @@ export const BenefitImage = styled.img`
   padding: ${(props) => props.padding};
   width: ${(props) => props.width};
   height: ${(props) => props.height};
+  animation: ${rotate} 2s linear infinite;
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     display: flex;
     align-items: center;
