@@ -7,6 +7,9 @@ export const Product = styled.div`
   height: 1110px;
   /* margin-top: -0.6rem; */
   /* z-index: 1000; */
+  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+    width: 520px;
+  }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     margin-bottom: 1.5rem;
     height: 1270px;
@@ -28,14 +31,16 @@ export const ProviderDesc = styled.div`
     font-size: 36px;
     color: #ffffff;
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-      width: 310px;
-      margin: 0 60px;
-      font-size: 30px;
+      text-align: center;
+      width: 400px;
+      margin: 0 50px;
+      text-align: center;
+      font-size: 25px;
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       text-align: center;
       width: 320px;
-      font-size: 20px;  
+      font-size: 20px;
     }
   }
   p {
@@ -52,14 +57,15 @@ export const ProviderDesc = styled.div`
       padding: 25px;
     }
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-      width: 380px;
-      margin: 0 20px;
-      font-size: 30px;
+      text-align: center;
+      width: 400px;
+      margin: 0 50px;
+      font-size: 18px;
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       text-align: center;
       font-size: 18px;
-      width: 390px;
+      width: 320px;
       /* margin: 2rem; */
     }
   }
@@ -74,13 +80,12 @@ export const ProductGuide = styled.div`
     width: 850px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 600px;
+    width: 550px;
     flex-direction: column;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-      width: 420px;
-    }
-  
+    width: 420px;
+  }
 `;
 export const ProductImageGuide = styled.div`
   flex: 1;
@@ -99,6 +104,9 @@ export const ProductTextGuide = styled.div`
 `;
 export const GuideWrapper = styled.div`
   display: flex;
+  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+    flex-direction: column;
+  }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     flex-direction: column;
   }
@@ -122,17 +130,19 @@ export const GuideTextWrapper = styled.div`
     font-size: 24px;
     color: #ffffff;
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-      font-size: 20px;
+      margin-top: 0.5rem;
+      font-size: 18px;
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-      margin-top: .5rem ;
-  }
+      margin-top: 0.5rem;
+    }
   }
   p {
     width: 379px;
     font-size: 17px;
     color: #ffffff;
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+      width: 270px;
       font-size: 16px;
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {

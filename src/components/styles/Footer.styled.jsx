@@ -12,7 +12,7 @@ export const FooterWrapper = styled.div`
     width: 700px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 570px;
+    width: 520px;
     flex-direction: column;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
@@ -21,13 +21,13 @@ export const FooterWrapper = styled.div`
 `;
 export const AllRight = styled.span`
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 0.7rem;
   }
 `;
 export const TermandCondition = styled.p`
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-botton: 1rem;
   }
 `;

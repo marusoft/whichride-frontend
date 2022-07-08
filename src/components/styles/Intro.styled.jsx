@@ -11,12 +11,15 @@ export const IntroWrapper = styled.div`
     flex-direction: column;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+    padding: 0 190px;
     justify-content: center;
     flex-direction: column;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
+    padding: 0 210px;
     justify-content: center;
     flex-direction: column;
+   
   }
 `;
 export const IntroLeft = styled.div`
@@ -38,8 +41,8 @@ export const IntroLeft = styled.div`
       margin: 0 auto;
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-      font-size: 27px;
-      width: 350px;
+      font-size: 25px;
+      width: 390px;
       text-align: center;
       margin: 0 auto;
     }
@@ -56,6 +59,12 @@ export const IntroLeft = styled.div`
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
       font-size: 18px;
       width: 400px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
+      font-size: 18px;
+      width: 360px;
       text-align: center;
       margin: 0 auto;
     }

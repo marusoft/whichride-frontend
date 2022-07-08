@@ -13,7 +13,7 @@ const rotate = keyframes`
 export const BenefitWrapper = styled.div`
   background: rgba(167, 146, 254, 0.07);
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 600px;
+    width: 520px;
   }
   /* @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       width: 450px;
@@ -63,7 +63,8 @@ export const BenefitLeft = styled.div`
     gap: 5rem;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    gap: 2rem;
+    flex-direction: column;
+    /* gap: 2rem; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     flex-direction: column;
@@ -85,7 +86,8 @@ export const BenefitRight = styled.div`
     gap: 5rem;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    gap: 2rem;
+    flex-direction: column;
+    /* gap: 2rem; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     flex-direction: column;
@@ -94,6 +96,13 @@ export const BenefitRight = styled.div`
 
 export const BenefitContent = styled.div`
   margin-bottom: 3rem;
+  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+  }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     display: flex;
     align-items: center;
@@ -110,6 +119,11 @@ export const BenefitImage = styled.img`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   animation: ${rotate} 2s linear infinite;
+  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     display: flex;
     align-items: center;
@@ -136,7 +150,7 @@ export const ChoiceDesc = styled.p`
   line-height: 120%;
   color: #4f4f4f;
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 200px;
+    width: 300px;
     font-size: 16px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {

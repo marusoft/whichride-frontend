@@ -12,7 +12,7 @@ export const SubscribeWrapper = styled.div`
     width: 700px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 570px;
+    width: 520px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     width: 420px;
@@ -26,9 +26,14 @@ export const SubscribeTitle = styled.h3`
   font-size: 36px;
   color: #232c35;
   margin-bottom: 1rem;
+  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+    text-align: center;
+    font-size: 30px;
+    width: 350px;
+  }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     font-size: 30px;
-    width:300px;
+    width: 300px;
     text-align: center;
   }
 `;
@@ -40,6 +45,11 @@ export const SubscribeDesc = styled.p`
   text-align: center;
   color: #233533;
   margin-bottom: 1rem;
+  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+    text-align: center;
+    font-size: 18px;
+    width: 350px;
+  }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     text-align: center;
     font-size: 16px;
@@ -64,6 +74,13 @@ export const SubscribeForm = styled.form`
       color: ${({ theme }) => theme.colors.body};
       font-size: 0.97rem;
     }
+    @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 300px;
+      margin: .9rem 2rem;
+    }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       display: flex;
       flex-direction: column;
@@ -81,10 +98,15 @@ export const SubscribeForm = styled.form`
     color: ${({ theme }) => theme.colors.body};
     font-size: 16px;
     line-height: 12px;
+    @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+      text-align: center;
+      width: 300px;
+      margin: 1rem 2rem;
+    }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       text-align: center;
       width: 300px;
-     margin: 1rem 1.2rem;
+      margin: 1rem 1.2rem;
     }
   }
 `;
