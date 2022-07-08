@@ -1,18 +1,22 @@
 import styled from "styled-components";
 
 export const Product = styled.div`
-  /* position: absolute; */
   background-color: ${({ theme }) => theme.colors.productProviderBg};
   width: 1440px;
   height: 1110px;
-  /* margin-top: -0.6rem; */
-  /* z-index: 1000; */
+  @media (max-width: ${({ theme }) => theme.mobile.md}px) {
+    width: 960px;
+  }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 520px;
+    width: 768px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
+    width: 600px;
     margin-bottom: 1.5rem;
     height: 1270px;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+    width: 450px;
   }
 `;
 
@@ -20,7 +24,6 @@ export const ProviderDesc = styled.div`
   text-align: center;
   padding-top: 8rem;
   margin: 50px 0;
-  /* padding: 70px; */
   @media (max-width: ${({ theme }) => theme.mobile.md}px) {
   }
   h3 {
@@ -31,9 +34,6 @@ export const ProviderDesc = styled.div`
     font-size: 36px;
     color: #ffffff;
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-      text-align: center;
-      width: 400px;
-      margin: 0 50px;
       text-align: center;
       font-size: 25px;
     }
@@ -52,21 +52,20 @@ export const ProviderDesc = styled.div`
     color: #e0e0e0;
     margin-top: 1.5rem;
     @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-      width: 500px;
-      margin: 0 100px;
-      padding: 25px;
+      text-align: center;
     }
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
       text-align: center;
       width: 400px;
-      margin: 0 50px;
       font-size: 18px;
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       text-align: center;
       font-size: 18px;
       width: 320px;
-      /* margin: 2rem; */
+    }
+    @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+      text-align: center;
     }
   }
 `;
@@ -80,11 +79,15 @@ export const ProductGuide = styled.div`
     width: 850px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 550px;
     flex-direction: column;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-    width: 420px;
+    width: 600px;
+    flex-direction: column;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+    width: 450px;
+    flex-direction: column;
   }
 `;
 export const ProductImageGuide = styled.div`
@@ -121,6 +124,9 @@ export const GuideStep = styled.span`
   align-items: center;
   justify-content: center;
   margin-right: 2.2rem;
+  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+    margin-bottom: 0.9rem;
+  }
 `;
 export const GuideTextWrapper = styled.div`
   margin-bottom: 4rem;
@@ -130,7 +136,7 @@ export const GuideTextWrapper = styled.div`
     font-size: 24px;
     color: #ffffff;
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-      margin-top: 0.5rem;
+      /* margin-top: 0.5rem; */
       font-size: 18px;
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
@@ -142,8 +148,8 @@ export const GuideTextWrapper = styled.div`
     font-size: 17px;
     color: #ffffff;
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-      width: 270px;
-      font-size: 16px;
+      width: 300px;
+      font-size: 18px;
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       width: 270px;

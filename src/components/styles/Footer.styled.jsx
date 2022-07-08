@@ -9,14 +9,18 @@ export const FooterWrapper = styled.div`
   justify-content: space-around;
   color: #ffffff;
   @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-    width: 700px;
+    width: 960px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 520px;
+    width: 768px;
     flex-direction: column;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-    width: 420px;
+    width: 600px;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+    width: 450px;
+    flex-direction: column;
   }
 `;
 export const AllRight = styled.span`

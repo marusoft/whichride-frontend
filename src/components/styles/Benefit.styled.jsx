@@ -12,12 +12,19 @@ const rotate = keyframes`
 
 export const BenefitWrapper = styled.div`
   background: rgba(167, 146, 254, 0.07);
-  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 520px;
+  @media (max-width: ${({ theme }) => theme.mobile.md}px) {
+    width: 960px;
   }
-  /* @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-      width: 450px;
-    } */
+  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+    width: 768px;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
+    width: 600px;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+    width: 450px;
+    flex-direction: column;
+  }
 
   h1 {
     color: #232c35;
@@ -29,6 +36,11 @@ export const BenefitWrapper = styled.div`
     width: 1450px;
     text-align: center;
     margin: 0 auto;
+    @media (min-width: 1024px) {
+      top: 1900px;
+      right: 10px;
+      width: 900px;
+    }
     @media (max-width: ${({ theme }) => theme.mobile.md}px) {
       top: 2050px;
       width: 900px;
@@ -47,6 +59,8 @@ export const BenefitContainer = styled.div`
     flex-direction: column;
     /* padding: 40px; */
   }
+  @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
+  }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
   }
 `;
@@ -64,7 +78,6 @@ export const BenefitLeft = styled.div`
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
     flex-direction: column;
-    /* gap: 2rem; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     flex-direction: column;
@@ -87,7 +100,6 @@ export const BenefitRight = styled.div`
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
     flex-direction: column;
-    /* gap: 2rem; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     flex-direction: column;
@@ -101,14 +113,12 @@ export const BenefitContent = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 450px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 400px;
   }
 `;
 export const BenefitImage = styled.img`
@@ -138,7 +148,7 @@ export const ChoiceTitle = styled.h3`
   font-size: 20px;
   color: #232c35;
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    font-size: 18px;
+    font-size: 24px;
   }
 `;
 export const ChoiceDesc = styled.p`
@@ -150,8 +160,8 @@ export const ChoiceDesc = styled.p`
   line-height: 120%;
   color: #4f4f4f;
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 300px;
-    font-size: 16px;
+    width: 450px;
+    font-size: 22px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     width: 290px;

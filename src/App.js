@@ -16,22 +16,22 @@ const theme = {
     subscribeBg: "#F2C94C",
     footerBg: "#DEB63D",
   },
-  mobile:{
-    xxs: "280",
-    xs: "450",
-    sm: "600",
+  mobile: {
+    xxs: "450",
+    xs: "600",
+    sm: "768",
     md: "960",
     lg: "1280",
-    xlarge: "1920px"
-  }
+    xlarge: "1920px",
+  },
 };
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <>
-      <GlobalStyles />
-       <HomePage />
+        <GlobalStyles />
+        <HomePage />
       </>
     </ThemeProvider>
   );

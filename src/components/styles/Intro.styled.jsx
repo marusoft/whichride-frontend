@@ -32,7 +32,7 @@ export const IntroLeft = styled.div`
     color: ${({ theme }) => theme.colors.headingColor};
     margin-bottom: 1.2rem;
     @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-      /*  */
+      text-align: center;
     }
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
       font-size: 30px;
@@ -54,7 +54,8 @@ export const IntroLeft = styled.div`
     font-size: 20px;
     color: ${({ theme }) => theme.colors.paragraphColor};
     @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-      /*  */
+      width: 500px ;
+      text-align:center;
     }
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
       font-size: 18px;

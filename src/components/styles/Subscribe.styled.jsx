@@ -9,13 +9,17 @@ export const SubscribeWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-    width: 700px;
+    width: 960px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 520px;
+    width: 768px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-    width: 420px;
+    width: 600px;
+  }
+  @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+    width: 450px;
+    flex-direction: column;
   }
 `;
 export const SubscribeTitle = styled.h3`
@@ -79,7 +83,7 @@ export const SubscribeForm = styled.form`
       flex-direction: column;
       text-align: center;
       width: 300px;
-      margin: .9rem 2rem;
+      margin: 0.9rem 2rem;
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       display: flex;
