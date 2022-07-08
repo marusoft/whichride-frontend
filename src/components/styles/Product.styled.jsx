@@ -15,8 +15,9 @@ export const Product = styled.div`
 
 export const ProviderDesc = styled.div`
   text-align: center;
+  padding-top: 8rem;
   margin: 50px 0;
-  padding: 70px;
+  /* padding: 70px; */
   @media (max-width: ${({ theme }) => theme.mobile.md}px) {
   }
   h3 {
@@ -33,8 +34,8 @@ export const ProviderDesc = styled.div`
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       text-align: center;
-      font-size: 20px;
-      width: 160px;
+      width: 320px;
+      font-size: 20px;  
     }
   }
   p {
@@ -57,8 +58,9 @@ export const ProviderDesc = styled.div`
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       text-align: center;
-      font-size: 20px;
-      width: 250px;
+      font-size: 18px;
+      width: 390px;
+      /* margin: 2rem; */
     }
   }
 `;

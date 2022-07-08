@@ -27,6 +27,8 @@ export const SubscribeTitle = styled.h3`
   color: #232c35;
   margin-bottom: 1rem;
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
+    font-size: 30px;
+    width:300px;
     text-align: center;
   }
 `;
@@ -41,7 +43,7 @@ export const SubscribeDesc = styled.p`
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
     text-align: center;
     font-size: 16px;
-    width: 390px;
+    width: 300px;
   }
 `;
 export const SubscribeForm = styled.form`
@@ -66,7 +68,8 @@ export const SubscribeForm = styled.form`
       display: flex;
       flex-direction: column;
       text-align: center;
-      width: 350px;
+      width: 300px;
+      margin: 1rem 1.2rem;
     }
   }
   button {
