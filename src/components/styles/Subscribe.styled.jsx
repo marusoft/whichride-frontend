@@ -2,23 +2,23 @@ import styled from "styled-components";
 
 export const SubscribeWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.subscribeBg};
-  width: 1440px;
+  /* width: 1440px; */
   height: 389px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-    width: 960px;
+    /* width: 960px; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 768px;
+    /* width: 768px; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-    width: 600px;
+    /* width: 600px; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
-    width: 450px;
+    /* width: 450px; */
     flex-direction: column;
   }
 `;
@@ -102,6 +102,11 @@ export const SubscribeForm = styled.form`
     color: ${({ theme }) => theme.colors.body};
     font-size: 16px;
     line-height: 12px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+    &:hover{
+      transform: scale(1.1);
+    }
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
       text-align: center;
       width: 300px;

@@ -67,6 +67,7 @@ html {
   font-family: 'CeraPro', sans-serif;
   background-color: ${({ theme }) => theme.colors.body};
   color: #232C35;
+  overflow-x: hidden;
 }
 li {
   list-style: none;

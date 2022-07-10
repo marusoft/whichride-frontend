@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const NavbarWrapper = styled.div`
-`;
+export const NavbarWrapper = styled.div``;
 export const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
@@ -19,9 +18,9 @@ export const NavListItem = styled.li`
   font-family: "CeraPro";
   font-weight: 700;
   font-size: 17px;
-  color: ${({theme}) => theme.colors.navItemsColor};
+  color: ${({ theme }) => theme.colors.navItemsColor};
   cursor: pointer;
-  @media(max-width: ${({theme}) => theme.mobile.md}px){
+  @media (max-width: ${({ theme }) => theme.mobile.md}px) {
     display: none;
   }
 `;

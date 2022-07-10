@@ -1,22 +1,23 @@
 import styled from "styled-components";
+import { animated } from "react-spring"
 
 export const Product = styled.div`
   background-color: ${({ theme }) => theme.colors.productProviderBg};
-  width: 1440px;
+  /* width: 1440px; */
   height: 1110px;
   @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-    width: 960px;
+    /* width: 960px; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 768px;
+    /* width: 768px; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-    width: 600px;
+    /* width: 600px; */
     margin-bottom: 1.5rem;
     height: 1270px;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
-    width: 450px;
+    /* width: 300px; */
   }
 `;
 
@@ -42,6 +43,11 @@ export const ProviderDesc = styled.div`
       width: 320px;
       font-size: 20px;
     }
+    @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+      text-align: center;
+      /* width: 310px; */
+      font-size: 16px;
+    }
   }
   p {
     width: 430px;
@@ -66,6 +72,8 @@ export const ProviderDesc = styled.div`
     }
     @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
       text-align: center;
+      font-size: 16px;
+      width: 220px;
     }
   }
 `;
@@ -90,7 +98,7 @@ export const ProductGuide = styled.div`
     flex-direction: column;
   }
 `;
-export const ProductImageGuide = styled.div`
+export const ProductImageGuide = styled(animated.div)`
   flex: 1;
   img {
     @media (max-width: ${({ theme }) => theme.mobile.md}px) {
@@ -100,10 +108,6 @@ export const ProductImageGuide = styled.div`
 `;
 export const ProductTextGuide = styled.div`
   flex: 1;
-  @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-  }
-  @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-  }
 `;
 export const GuideWrapper = styled.div`
   display: flex;
@@ -153,6 +157,9 @@ export const GuideTextWrapper = styled.div`
     }
     @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
       width: 270px;
+    }
+    @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+      width: 180px;
     }
   }
 `;

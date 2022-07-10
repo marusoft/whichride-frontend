@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { animated } from "react-spring";
 
 export const IntroWrapper = styled.div`
   display: flex;
@@ -11,18 +12,19 @@ export const IntroWrapper = styled.div`
     flex-direction: column;
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    padding: 0 190px;
+    /* padding: 0 190px; */
     justify-content: center;
     flex-direction: column;
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-    padding: 0 210px;
+    /* padding: 0 210px; */
     justify-content: center;
     flex-direction: column;
-   
+  }
+  @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
   }
 `;
-export const IntroLeft = styled.div`
+export const IntroLeft = styled(animated.div)`
   flex: 1;
   h2 {
     width: 450px;
@@ -46,6 +48,10 @@ export const IntroLeft = styled.div`
       text-align: center;
       margin: 0 auto;
     }
+    @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+      font-size: 20px;
+      width: 270px;
+    }
   }
   p {
     width: 350px;
@@ -54,8 +60,8 @@ export const IntroLeft = styled.div`
     font-size: 20px;
     color: ${({ theme }) => theme.colors.paragraphColor};
     @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-      width: 500px ;
-      text-align:center;
+      width: 500px;
+      text-align: center;
     }
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
       font-size: 18px;
@@ -69,6 +75,11 @@ export const IntroLeft = styled.div`
       text-align: center;
       margin: 0 auto;
     }
+    @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+      font-size: 16px;
+      width: 270px;
+      margin: 0 auto;
+    }
   }
 `;
 export const IntroRight = styled.div`
@@ -78,11 +89,21 @@ export const IntroRight = styled.div`
   }
   img {
     width: 600px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
       width: 400px;
       text-align: center;
       margin: 0 auto;
       padding: 0 70px;
+    }
+    @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
+      font-size: 16px;
+      width: 350px;
+      margin: 0 auto;
     }
   }
 `;

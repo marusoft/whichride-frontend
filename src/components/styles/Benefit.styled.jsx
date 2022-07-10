@@ -13,16 +13,16 @@ const rotate = keyframes`
 export const BenefitWrapper = styled.div`
   background: rgba(167, 146, 254, 0.07);
   @media (max-width: ${({ theme }) => theme.mobile.md}px) {
-    width: 960px;
+    /* width: 960px; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-    width: 768px;
+    /* width: 768px; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.xs}px) {
-    width: 600px;
+    /* width: 600px; */
   }
   @media (max-width: ${({ theme }) => theme.mobile.xxs}px) {
-    width: 450px;
+    /* width: 450px; */
     flex-direction: column;
   }
 
@@ -46,9 +46,10 @@ export const BenefitWrapper = styled.div`
       width: 900px;
     }
     @media (max-width: ${({ theme }) => theme.mobile.sm}px) {
-      display: none;
+      /* display: none; */
+      top: 1780px;
       font-size: 25px;
-      width: 500px;
+      width: 400px;
     }
   }
 `;

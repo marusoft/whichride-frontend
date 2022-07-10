@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSpring, animated, config } from "react-spring"
 import Iphone from "../assests/images/iPhoneX2.png";
 import {
   Product,
@@ -11,21 +12,50 @@ import {
   GuideTextWrapper,
 } from "./styles/Product.styled";
 
+const calc = (x, y) => [
+  -(y - window.innerHeight / 2) / 20,
+  (x - window.innerWidth / 2) / 20,
+  1,
+];
+const trans = (x, y, s) =>
+  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+
 const ProductProvider = () => {
+  const [flip, setFlip] = useState(false);
+  const fade = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    reset: true,
+    reverse: flip,
+    delay: 200,
+    config: config.default,
+    onRest: () => setFlip(!flip),
+  });
+
+  const [props, set] = useSpring(() => ({
+    xys: [0, 0, 1],
+    config: config.default,
+  }));
   return (
     <Product>
       <ProviderDesc>
-        <h3>
+        <animated.h3 style={fade}>
           Whichride brings together multiple ride hailing providers and local
           taxi firms in one app
-        </h3>
+        </animated.h3>
         <p>
           Allowing riders to select the provider that offers the best price,
           service or travel time, then seamlessly book within the app
         </p>
       </ProviderDesc>
       <ProductGuide>
-        <ProductImageGuide>
+        <ProductImageGuide
+          onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+          onMouseLeave={() => set({ xys: [0, 0, 1] })}
+          style={{
+            transform: props.xys.interpolate(trans),
+          }}
+        >
           <img src={Iphone} alt="how to use product guide avatar" width={450} />
         </ProductImageGuide>
         <ProductTextGuide>
