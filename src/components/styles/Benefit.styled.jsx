@@ -36,7 +36,7 @@ export const BenefitWrapper = styled.div`
     width: 1450px;
     text-align: center;
     margin: 0 auto;
-    @media (min-width: 1024px) {
+    @media (max-width: 1024px) {
       top: 1900px;
       right: 10px;
       width: 900px;
